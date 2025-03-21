@@ -218,6 +218,85 @@ ul li {
     text-decoration: underline;
 }
 
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.github-button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.github-button:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+    /*transform: scale(1.05); /* Slightly enlarge on hover */
+    color: black;
+    background-color: rgb(254, 254, 254);
+}
+
+.website-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #b8b8b8; /* Blue background */
+    color: #3d3d3d; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.website-button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.website-button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    /*transform: scale(1.05); /* Slightly enlarge on hover */
+    color: black;
+}
+
+.fably-website-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000; /* Blue background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.fably-website-button img {
+    /*width: 30px; /* Adjust icon size */
+    height: 22px;
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.fably-website-button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    /*transform: scale(1.05); /* Slightly enlarge on hover */
+    color: black;
+}
+
 @media (max-width: 768px) {
     .contact-box {
         flex: 1 1 100%; /* Full width on smaller screens */
