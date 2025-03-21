@@ -120,11 +120,15 @@ section h2 {
 #portfolio h3{
     color:#00509E;
 }
+#portfolio span{
+    white-space: nowrap;
+}
 span img {
     width: 15px; /* Reduce icon size */
     height: 15px; /* Reduce icon size */
     margin-right: 8px; /* Adjust spacing */
     margin-left: 10px;
+    vertical-align: middle;
 }
 footer {
     text-align: center;
