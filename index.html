@@ -1,1 +1,324 @@
-<h1>Vethum Buthgamuwa Website</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vethum Buthgamuwa | Profile</title>
+    <style>
+        /* Global Styles */
+        ::selection {
+            background-color: #76C7C0; /* Background color of the highlight */
+            color: #ffffff; /* Text color within the highlight */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7F8FA; /* Light gray */
+            color: #333333; /* Charcoal text */
+        }
+        header {
+            background-color: #00509E; /* Deep blue */
+            color: #fff; /* White text */
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #76C7C0; /* Teal green */
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            z-index: 1000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff; /* White text */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #FFA500; /* Accent color */
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        section h2 {
+            margin-top: 0;
+            color: #00509E; /* Deep blue for headings */
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div {
+            flex: 1 1 calc(33% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background-color: #F7F8FA; /* Light gray for skill boxes */
+            border: 1px solid #E0E0E0; /* Light border */
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .skills img {
+            width: 40px; /* Reduce icon size */
+            height: 40px; /* Reduce icon size */
+            margin-right: 10px; /* Adjust spacing */
+        }
+        #portfolio div {
+            margin: 10px;
+            padding: 10px;
+            background-color: #F7F8FA; /* Light gray for portfolio boxes */
+            border: 1px solid #E0E0E0; /* Light border */
+            border-radius: 5px;
+            text-align: left;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        #portfolio li{
+            list-style: none;
+        }
+        #portfolio h3{
+            color:#00509E;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00509E; /* Deep blue for footer */
+            color: #fff; /* White text */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #00509E; /* Deep blue for links */
+        }
+        a:hover {
+            color: #FFA500; /* Accent color for hovered links */
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        #contact{
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        #contact h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap; /* Ensure items stay in one row */
+            gap: 10px; /* Add spacing between items */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-box {
+            flex: 0 1 calc(33.33% - 10px); /* Adjust width to fit three boxes in one row */
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px; /* Reduce padding to make boxes smaller */
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-decoration: none; /* Remove default link styles */
+            color: inherit; /* Inherit text color */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .contact-box:hover {
+            transform: scale(1.0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-box img {
+            width: 40px; /* Reduce icon size */
+            height: 40px; /* Reduce icon size */
+            margin-right: 10px; /* Adjust spacing */
+        }
+        
+        .contact-box span {
+            font-weight: bold;
+        }
+        
+        .contact-box a {
+            color: #00509E;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .contact-box {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Vethum Buthgamuwa</h1>
+        <p>Software Engineering Undergraduate</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Skilled and dedicated Software Engineering Student studying at the Informatics Institute of Technology (IIT) affiliated with the University of Westminster (UK), seeking a one-year internship. I am proficient in web development languages like HTML, CSS, and JavaScript and programming languages like Python and Java. I also have experience working with frameworks like React, Flask, and Spring Boot. I also have experience with mobile app development with Flutter. I strive to apply my programming expertise and problem-solving abilities in a professional setting, contribute effectively to team initiatives, and cultivate valuable industry experience to enhance both personal and organizational growth.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <img src="images\317755_badge_html_html5_achievement_award_icon.svg" alt="HTML Icon">
+                <h3>HTML & CSS</h3>
+                <p>Experienced in building responsive and visually appealing websites.</p>
+            </div>
+            <div>
+                <img src="images\9035061_logo_javascript_icon.svg" alt="JavaScript Icon">
+                <h3>JavaScript</h3>
+                <p>Proficient in writing modern, modular, and scalable JavaScript code.</p>
+            </div>
+            <div>
+                <img src="images/4375050_logo_python_icon.svg" alt="JavaScript Icon">
+                <h3>Python</h3>
+                <p>Skilled in backend development and data manipulation using Python.</p>
+            </div>
+            <div>
+                <img src="images\7423887_react_react native_icon.svg" alt="JavaScript Icon">
+                <h3>React</h3>
+                <p>Expertise in building dynamic and fast web applications with React.</p>
+            </div>
+            <div>
+                <img src="images\9118014_django_fill_icon.svg" alt="JavaScript Icon">
+                <h3>Django</h3>
+                <p>Experienced in building secure and scalable web applications.</p>
+            </div>
+            <div>
+                <img src="images\4691303_mysql_icon.svg" alt="JavaScript Icon">
+                <h3>MySQL</h3>
+                <p>Skilled in designing and querying databases efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <ul>
+            <li>
+                <div>
+                    <h3>Fably: AI Virtual Try-On Fashion App</h3>
+                    <p><b>Technologies</b>: Python, Flask, Flutter, MongoDB<br>
+                        <a href="https://github.com/Dashin-sanjana/Fably" target="_blank">GitHub Repository Link</a>
+                    </p>
+                    <p>As part of the group project Fably, I contributed to backend development by creating Flask-based REST APIs and handled API communication between the Flask backend and the FASHN Virtual Try-On API. I also contributed to the frontend mobile app development, implementing session management, and integrating the password reset feature. On the Flutter frontend, I collaborated with the team to design and implement user-friendly UI components, ensuring seamless communication between the app and backend.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Real-Time Ticket Booking Simulator</h3>
+                    <p><b>Technologies</b>: React, Spring Boot, Java, SQLite<br>
+                        <a href="https://github.com/vethumIIT/Tickets-Booking-Simulator" target="_blank">GitHub Repository Link</a>
+                    </p>
+                    <p>I built a multi-threaded ticket booking simulator application that simulates multiple vendors adding tickets and multiple customers purchasing tickets. I used React for the front end and Spring Boot for the back end. I designed and implemented the user interface, implemented the backend API, and integrated an SQLite database into it. </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Web Development Group Project</h3>
+                    <p><b>Technologies</b>: HTML, CSS, JavaScript<br>
+                        <a href="https://github.com/vethumIIT/EradicationOfPoverty" target="_blank">GitHub Repository Link</a><br>
+                        <a href="https://vethumiit.github.io/EradicationOfPoverty/home.html" target="_blank">ThriveHub Website</a>
+                    </p>
+                    <p>I was required to work as a team with my colleagues to create a website for Sustainable Development Goals of the United Nations topic 1. No poverty.  I contributed to this project by building the User Profile Page and the Developer Team Information page. i also contributed by guiding my teammates through tasks that they found challenging.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Plane Ticket Booking System</h3>
+                    <p><b>Technologies</b>: Java<br>
+                    </p>
+                    <p>I created a CLI based Plane Ticket Booking system where I was required to validate user input, allow users to buy and cancel seats bookings, save, and retrieve information of seat bookings using Arrays and display the booked seats in a text character representation of the planes seat layout. I was also required to create technical document for the project explaining how the project worked.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaboration or job opportunities:</p>
+        <div class="contact-container">
+            <a href="mailto:vethum.lb@gmail.com" class="contact-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+                <span>vethum.lb@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vethum-buthgamuwa-7863a5292/" target="_blank" class="contact-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/vethumIIT" target="_blank" class="contact-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon">
+                <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vethum Buthgamuwa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
