@@ -51,23 +51,13 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+#about p{
+    text-align: justify;
+    line-height: 1.5;
+}
 section h2 {
     margin-top: 0;
     color: #00509E; /* Deep blue for headings */
-}
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-}
-.skills div {
-    flex: 1 1 calc(33% - 20px);
-    margin: 10px;
-    padding: 10px;
-    background-color: #F7F8FA; /* Light gray for skill boxes */
-    border: 1px solid #E0E0E0; /* Light border */
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 #skills h3 {
@@ -86,7 +76,7 @@ section h2 {
 }
 
 .skills div {
-    flex: 1 1 calc(33% - 20px); /* Adjust width to fit 3 boxes per row */
+    flex: 1 1 calc(20% - 20px); /* Adjust width to fit 3 boxes per row */
     padding: 15px;
     background-color: #F7F8FA; /* Light gray for skill boxes */
     border: 1px solid #E0E0E0; /* Light border */
@@ -96,8 +86,8 @@ section h2 {
 }
 
 .skills img {
-    width: 50px; /* Reduce icon size */
-    /*height: 40px; /* Reduce icon size */
+    /*width: 50px; /* Reduce icon size */
+    height: 50px; /* Reduce icon size */
     margin-right: 10px; /* Adjust spacing */
 }
 #portfolio div {
@@ -124,11 +114,18 @@ section h2 {
     white-space: nowrap;
 }
 span img {
-    width: 15px; /* Reduce icon size */
+    /*width: 15px; /* Reduce icon size */
     height: 15px; /* Reduce icon size */
     margin-right: 8px; /* Adjust spacing */
     margin-left: 10px;
     vertical-align: middle;
+}
+.project-text{
+    text-align: justify;
+    line-height: 1.5;
+}
+#portfolio p{
+    line-height: 1.5;
 }
 footer {
     text-align: center;
@@ -257,6 +254,7 @@ ul li {
     font-weight: bold; /* Bold text */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 10px;
 }
 
 .website-button img {
