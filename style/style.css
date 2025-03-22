@@ -60,6 +60,42 @@ section h2 {
     color: #00509E; /* Deep blue for headings */
 }
 
+.cv-button > .new-tab{
+    background-color: #d7d7d7;
+}
+
+.cv-button:hover > .new-tab{
+    background-color: #ffffff;
+}
+
+.cv-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d7d7d7; /* Blue background */
+    color: black; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-top: 10px;
+
+}
+
+.cv-button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.cv-button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    /*transform: scale(1.05); /* Slightly enlarge on hover */
+    color: black;
+}
+
 #skills h3 {
     color: #00509E; /* Deep blue for category headings */
     margin-bottom: 10px;
@@ -326,6 +362,9 @@ ul li {
 @media (max-width: 768px) {
     .contact-box {
         flex: 1 1 100%; /* Full width on smaller screens */
+    }
+    header{
+        padding: 40px 0px;
     }
     header h1 {
         margin: 0;
