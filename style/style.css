@@ -272,11 +272,11 @@ ul li {
 }
 
 .github-button img[alt="GitHub Logo"] {
-    width: 20px; /* Adjust icon size */
-    height: 20px;
+    width: 30px; /* Adjust icon size */
+    height: 30px;
     margin-right: 10px; /* Spacing between icon and text */
     padding:0;
-    border-radius: 100%;
+    /*border-radius: 100%;*/
 }
 
 .github-button:hover {
