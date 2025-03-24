@@ -272,8 +272,8 @@ ul li {
 }
 
 .github-button img[alt="GitHub Logo"] {
-    width: 30px; /* Adjust icon size */
-    height: 30px;
+    width: 25px; /* Adjust icon size */
+    height: 25px;
     margin-right: 10px; /* Spacing between icon and text */
     padding:0;
     /*border-radius: 100%;*/
@@ -322,8 +322,8 @@ ul li {
 }
 
 .website-button img {
-    width: 20px; /* Adjust icon size */
-    height: 20px;
+    width: 25px; /* Adjust icon size */
+    height: 25px;
     margin-right: 10px; /* Spacing between icon and text */
 }
 
