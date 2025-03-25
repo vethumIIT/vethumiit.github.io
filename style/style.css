@@ -51,10 +51,38 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
-#about p{
+/*.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}*/
+
+.profile-container {
+    overflow: hidden; /* Clears floated elements */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.profile-image {
+    float: left; /* Floats the image to the left */
+    width: 160px; /* Profile image width */
+    height: 160px; /* Profile image height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 2px solid #00509E; /* Border color matches heading */
+    margin-right: 20px; /* Space between the image and text */
+}
+
+#about p {
     text-align: justify;
     line-height: 1.5;
+    margin: 0; /* Remove margin for better alignment */
+    flex: 1;
+    overflow: hidden;
 }
+
 section h2 {
     margin-top: 0;
     color: #00509E; /* Deep blue for headings */
@@ -393,5 +421,34 @@ ul li {
     }
     nav a:hover {
         color: #FFA500; /* Accent color */
+    }
+
+    
+
+    @media (max-width: 468px) {
+        .profile-container {
+            overflow: hidden; /* Clears floated elements */
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+        
+        .profile-image {
+            float: clear;
+            width: 100%; /* Profile image width */
+            height: auto;
+            /*height: 160px; /* Profile image height */
+            border-radius: 50%; /* Circular shape */
+            object-fit: cover; /* Ensures the image fits within the circle */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            border: 2px solid #00509E; /* Border color matches heading */
+            margin-right: 20px; /* Space between the image and text */
+            margin-bottom: 30px;
+        }
+    
+        #about p{
+            clear: left;
+        }
     }
 }
