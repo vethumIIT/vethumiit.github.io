@@ -183,6 +183,12 @@ span img {
     margin-right: 8px; /* Adjust spacing */
     margin-left: 10px;
     vertical-align: middle;
+
+    user-select: none; 
+    -webkit-user-drag: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
 }
 .project-text{
     text-align: justify;
